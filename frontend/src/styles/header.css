@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container,
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 5vw;
+  font-family: 'Indie Flower', cursive;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin: 10px 5px -5px 5px;
+  z-index: 1;
+}
+
+.user-name {
+  margin-bottom: 10px;
+  font-weight: 300;
+}

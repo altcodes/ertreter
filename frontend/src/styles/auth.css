@@ -1,0 +1,21 @@
+.login,
+.signup {
+  padding: 25px;
+  margin: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+}
+.auth {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.text-right {
+  float: right;
+  margin-top: 10px;
+}
+.type {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}

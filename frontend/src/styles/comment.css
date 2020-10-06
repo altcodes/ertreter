@@ -1,0 +1,19 @@
+.add-comment {
+  padding: 25px;
+  margin: 10px;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.add-title {
+  font-family: 'Indie Flower', cursive;
+  letter-spacing: 2px;
+  margin-bottom: -20px;
+  position: relative;
+  top: -10px;
+}
+.add-btn {
+  margin: 2px;
+}

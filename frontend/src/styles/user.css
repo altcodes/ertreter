@@ -1,0 +1,11 @@
+.userBoard {
+  display: flex;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+.user {
+  margin: 5px;
+}
