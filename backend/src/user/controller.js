@@ -1,6 +1,7 @@
 const userService = require('./service');
 const articleService = require('../article/service');
 
+
 function getUsers(req, res) {
   userService
     .getUsers()

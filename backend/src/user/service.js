@@ -11,6 +11,7 @@ function getUser(id) {
       });
   });
 }
+
 function getUserByEmail(email) {
   return new Promise((resolve, reject) => {
     User.findOne({ email })
