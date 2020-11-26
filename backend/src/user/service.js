@@ -11,7 +11,7 @@ function getUser(id) {
       });
   });
 }
-
+//Récupération d'utilisateur par email
 function getUserByEmail(email) {
   return new Promise((resolve, reject) => {
     User.findOne({ email })
@@ -35,7 +35,7 @@ function getUsers() {
       });
   });
 }
-
+//Création utilisateur
 function createUser(params) {
   return new Promise((resolve, reject) => {
     User.find({ email: params.email }).then((user) => {
@@ -56,7 +56,7 @@ function createUser(params) {
     });
   });
 }
-
+//Suppression utilisateur
 function deleteUser(id) {
   return new Promise((resolve, reject) => {
     getUser(id).then((user) => {
@@ -70,7 +70,7 @@ function deleteUser(id) {
     });
   });
 }
-
+//Mise a jour utilisateur
 function updateUser(id, params) {
   return new Promise((resolve, reject) => {
     getUser(id).then((user) => {

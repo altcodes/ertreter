@@ -1,5 +1,6 @@
 const Article = require('./model');
 
+// Récuperation de l'article
 function getArticle(id) {
   return new Promise((resolve, reject) => {
     Article.findById(id)
@@ -37,7 +38,7 @@ function getArticlesByUserId(id) {
       });
   });
 }
-
+//Création de l'article 
 function createArticle(params) {
   return new Promise((resolve, reject) => {
     const newArticle = new Article(params);
@@ -51,7 +52,7 @@ function createArticle(params) {
       });
   });
 }
-
+//Suppression de l'article
 function deleteArticle(id) {
   return new Promise((resolve, reject) => {
     getArticle(id).then((article) => {
@@ -65,7 +66,7 @@ function deleteArticle(id) {
     });
   });
 }
-
+//Mise a jour de l'article
 function updateArticle(id, params) {
   return new Promise((resolve, reject) => {
     getArticle(id).then((article) => {
